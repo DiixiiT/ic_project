@@ -1,0 +1,104 @@
+body{
+    background-color:#F6FFF5 ;
+    font-family: 'Segoe UI';
+}
+.container{
+    
+    height: 500px;
+    color: #6A6A6A;
+}
+.main1{
+    width: 450px;
+    background-color: white;
+    margin-top: 4em;
+    font-size: 20px;
+    border-radius:40px;
+    height: 500px;
+    box-shadow: -4px -4px 5px #DCFFDB,
+     4px 4px 10px #373B36;
+}
+#sign{
+    margin-top: 2vh;
+    font-size: 25px;
+    font-weight: bold;
+}
+form{
+    margin-top: 4px;
+}
+#in{
+    width: 100%;
+    padding: 0 20px 0 20px;
+    border: none;
+    margin-top: 20px;
+}
+.ss{
+    margin-right: 0em;
+}
+.form1,.pass{
+    border: 1px none rgb(131, 130, 130);
+    background-color: #DCF6D9;
+    border-radius: 14px;
+    width: 100%;
+    height: 70px;
+    text-indent: 33px;
+      
+}
+::placeholder{
+    color: #6A6A6A;
+    background-color:#DCF6D9;
+    opacity: 1;
+}
+.per,.lock{
+    font-size: 26px;
+}
+i{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 6px;
+    margin-top: 15px;
+    
+}
+h5{
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+img{
+    height: 70px;
+    width: 60px;
+}
+.media{
+    font-size: 60px;
+    background-color: rgba(255, 0, 0, 0);
+    margin-top: 0vh;
+    margin-left: 0.9vw;
+}
+.media:hover{
+    cursor: pointer;
+    text-shadow: 2px 2px 5px #38A12E;
+}
+button:hover{
+    box-shadow: 0 0 10px #38A12E;
+}
+
+#ss{
+    margin-right: 0;
+    margin-left: 24.5vw;
+}
+button{
+    background-color: #38A12E;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #38A12E;
+    height: 45px;
+}
+footer{
+    background-color:#38A12E;
+    color: white;
+    height:50px;
+    padding: 0;
+    margin-bottom: -1em;
+    
+}

@@ -1,0 +1,180 @@
+:root{
+    --font-primary:'Segoe UI';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color:#F6FFF5 ;
+}
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    font-size: 18px;
+    background-color:#F6FFF5 ;
+    font-weight: bold;
+    box-shadow: 0px 2px 20px #657064;
+    z-index: 2;
+    }
+
+    .loggo{
+        background-color: #156d0d;
+        color: white;
+        font-size: 25px;
+        margin-left:50px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .loggHead{
+        font-weight: bold;
+        margin:5px 0px 0 20px;
+    }
+
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10vw;
+}
+button{
+    font-size: var(--font-primary);
+     color: white;
+     border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+    font-weight: bold;
+    background-color: #A18B50;
+}
+.button1{
+    color: black;
+    border: 2px solid #38A12E;
+    background: transparent;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #38A12E;
+}
+ .maindiv{
+     display: flex;
+     margin-top: 14vh;
+     gap: 10px;
+ }
+#category{
+    position: fixed;
+    height: 90%;
+    overflow: scroll;    
+}
+a{
+    text-decoration: none;
+}
+.list,.mainList{
+    position: relative;
+    margin-top: 0;
+    font-size: var(--font-primary);
+    color: #6A6A6A;
+    border: none;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px black;
+    height: 45px;
+    font-weight: bold;
+    background-color: #D4EEBE;
+    text-align: center;
+    list-style: none;
+    z-index: 0;
+    
+}
+ span{
+     position: absolute;
+     margin-top: 8px;margin-left:-26px;
+ }
+.list:hover{
+    background-color:#38A12E;
+    color: azure;
+    cursor: pointer;
+}
+.btnList{
+    background: transparent;color: #6A6A6A;box-shadow: none;margin-top: 10px;
+}
+button:hover{
+    background-color:#38A12E;
+    color: azure;
+    cursor: pointer;
+}
+li:hover{
+    cursor: pointer;
+}
+.list1{
+    height: 33px;
+    background-color: rgb(119, 133, 122);
+    
+}
+.mainList{
+    position: fixed;
+    z-index: 1;
+    font-size: var(--font-primary);
+    color: white;
+    /*box-shadow: 4px 4px 10px black;*/
+    margin-top: -15px;
+    background-color: #9e8c5a;
+}
+#projectList{
+    padding: 20px;
+    margin: 0 0 0 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.fp{
+    gap: 20px;
+    box-shadow: -4px -4px 5px #DCFFDB,
+     4px 4px 10px #373B36;
+    border-radius: 15px;
+    z-index: 0;
+}
+.project{
+    font-family: 'Poppins', sans-serif;
+    margin: 15px; 
+    color: #6A6A6A;
+    font-weight: bold;
+}
+a{
+    
+    display: inline;
+    cursor: auto;
+    margin-right: 0;
+}
+
+.applyButton{
+    cursor: pointer;
+    padding: 5px;
+    background-color: #38A12E;
+    margin-bottom: 5px;
+    margin-left: 59vw;
+    height: 40px;
+    width: 80px;
+    box-shadow: 0 0 15px #38A12E;
+}
+.olist{
+    margin-left: -2.9vw;
+}
+
+ 
+
+
+ 

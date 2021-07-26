@@ -1,0 +1,88 @@
+ body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color:#F6FFF5 ;
+    }
+
+button{
+    border: 2px solid #38A12E;
+    background: transparent;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.loggo{
+    background-color: #156d0d;
+    color: white;
+    font-size: 25px;
+    margin-top: px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.loggHead{
+    font-weight: bold;
+    margin: 16px;
+}
+ul{
+    display: flex;
+     
+    list-style: none;
+    justify-content: space-around;
+     
+}
+.nav{
+    height: 50px;
+    box-shadow: 0px 2px 10px #657064;
+}
+.log{
+    margin-left: 20px;
+    display: flex;
+}
+.buttons{
+    display: flex;
+    gap:10px;
+}
+svg{
+    height: 300px;
+}
+.middle{
+    display: flex;
+}
+#s,#l{
+    width: 80px;
+    height: 45px;
+    font-weight: bold;
+}
+#s
+{
+    background-color: #38A12E;
+    color: white;
+}
+.image{
+    height: 300px;
+    margin-top: -90px;
+}
+
+.dummy{
+    height: 150px;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+     
+}
+i{
+    font-size: 30px;
+    
+}
+.socialMedia{
+    gap: 4vw;
+}
+.copy{
+    height: 40px;
+    color: white;
+    background-color: #42BD37;
+}
