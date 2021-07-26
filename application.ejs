@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/application.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>IMS | Apply</title>
+</head>
+<body><%if (data.length){%><% var x=data %><%} else{%><h1>No data</h1><%}%>
+  <div class="logo" style="margin-left: 30px;">
+    <i class="bi bi-arrow-left" style="font-size: 30px;cursor: pointer;"></i>
+</div>
+    <div class="container box1">
+        <form action="/form/apply/<%=x%>" method="POST">
+        <div class="row">
+          <div class="col" id="in">
+            <input type="text" class="form1" placeholder="First name" aria-label="First name" name="Fname" required>
+          </div>
+          <div class="col" id="in">
+            <input type="text" class="form1" placeholder="Middle name" aria-label="Middle name" name="Mname" required>
+          </div>
+          <div class="col" id="in">
+            <input type="text" class="form1"  placeholder="Last name" aria-label="Second name" name="Lname" required> 
+          </div>
+        </div>
+        <div class="row">
+            <div class="col" id="in">
+                <input type="text" class="form1"  placeholder="Date of Birth" aria-label="Date of Birth" onfocus="(this.type='date')" name="DOB"> 
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="in">
+                <input type="number" class="form1"  placeholder="Phone number" aria-label="Phone number" name="PhNo" required>
+              </div>
+              <div class="col" id="in">
+                <input type="text" class="form1"  placeholder="Qualification" aria-label="Education" name="Edu" required> 
+              </div>
+        </div>
+        <div class="row">
+            <div class="col" id="in">
+                <input type="text" class="form1"  placeholder="Email" aria-label="Email" name="Email" required>
+              </div>
+              <div class="col" id="in">
+                <input type="text" class="form1"  placeholder="College" aria-label="College" name="College" required>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col" id="in">
+                <textarea class="form1" id="exampleFormControlTextarea1" rows="3" placeholder="Why do you want join us?" style="height: 70px;" name="Op" required></textarea>
+              </div>
+              <div class="col" id="in">
+                <input type="text" class="form1"  placeholder="Upload Resume Link" aria-label="First name" name="Link" required>
+              </div>
+        </div>
+        <div class="d-grid gap-2 col-1 mx-auto ss">
+            </a><button  type="submit" onclick="message()">Apply</button>
+          </div>
+        </form>
+      </div>
+      <p id="msg"></p>
+    <script src="./public/js/applicationMsg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

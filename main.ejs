@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>IMS</title>
+</head>
+<body><%if(data.length) { data.forEach(function(data){  %>  
+    <div class="navbar">
+        <div class="loggo"><span class="loggHead">IM<n style="color: black;">S</n></span></div>
+        <div id="navsec">
+            <ul>
+                <li> Home <hr style="height: 5px;margin-top: -5px;color:#1b8611;"></li>
+                <a href="/form/status/<%= data.id %>"><li style="color:#6A6A6A;">Status</li></a>
+                <li><i class="bi bi-bell-fill"></i></li>
+                <li><button class="button1">Logout</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="maindiv">
+        <div id="category">
+         
+            <ol>
+                <li class="mainList" style="box-shadow: 0 0 0;"><span style="color: rgb(119, 1, 1);position: absolute;margin-top: 8px;margin-left:-26px;"> Category</span></li>
+                 
+                <li class="list list1">Option</li>
+                <a href="#electronics"><li class="list"><button class="btnList"> Electronics</button></li></a>
+                <li class="list"><button class="btnList"> Animation </button></li>
+                <li class="list"><button class="btnList"> Architecture</button></li>
+                <li class="list"><button class="btnList">Backend Development</button></li>
+                <li class="list"><button class="btnList"> Blogging</button></li>
+                <li class="list"><button class="btnList"> Computer Science</button></li>
+                <li class="list"><button class="btnList"> Data Entry</button></li>
+                <li class="list"><button class="btnList"> Design</button></li>
+                <li class="list"><button class="btnList"> Finance</button></li>
+                <li class="list"><button class="btnList"> Full Stack Development</button></li>
+                <li class="list"><button class="btnList"> Game Development</button></li>
+                <li class="list"><button class="btnList"> Graphic Design</button></li>
+                <li class="list"><button class="btnList"> Javscript Development </button></li>
+             
+                 
+            </ol>
+        </div>
+        <div class="fake">
+           
+            <!-- put evrything inside fake paremt div for  project list -->
+            <div id="projectList">
+             <!-- on more div for collection options yet to do -->
+             
+            <div class="fp" id="coputerScience">
+                <div class="project">
+                    <h3 style="color: black;">App Development</h3>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg>Unbox Lab,Mangalore</p><br>
+                    <div class="minInfo">
+                        <ul>
+                            <li>Start Date <br>00/00/0000</li>
+                            <li>Duration <br>2 Months</li>
+                            <li>Stipend <br>00000/Month</li>
+                            <li>Apply By <br>00/00/0000</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <p> Hard skills have forged their way into this technology world. Today, a blend of soft and hard skills is highly valued, as it indicates that the student is adaptable and likely to be productive.
+                         The experience you will gain from the internship will increse your productivity.
+                    </p>
+                    <a href="/form/<%=data.id%>"><button class="applyButton">APPLY</button></a>
+                </div>
+                </div>
+
+                <div class="fp">
+                    <div class="project">
+                        <h3 style="color: black;">Architecture</h3>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg>Pixar group,Belthangady</p><br>
+                        <div class="minInfo">
+                            <ul>
+                                <li>Start Date <br>00/00/0000</li>
+                                <li>Duration <br>2 Months</li>
+                                <li>Stipend <br>00000/Month</li>
+                                <li>Apply By <br>00/00/0000</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <p>Google offering you internships to the eligible candidates to enhance their skills.This intership is stippend and completing
+                            this intership candidate will given with the experience certificate. Grap your opportunity stand out in the crowd.All the best.
+                        </p>
+                        <a href="/form/<%=data.id%>"><button class="applyButton">APPLY</button></a>
+                    </div>
+                    </div>
+
+                    
+
+                    <div class="fp" id="coputerScience">
+                        <div class="project">
+                            <h3 style="color: black;">Project Name</h3>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                              </svg>Belthangady</p><br>
+                            <div class="minInfo">
+                                <ul>
+                                    <li>Start Date <br>00/00/0000</li>
+                                    <li>Duration <br>2 Months </li>
+                                    <li>Stipend <br>00000/Month</li>
+                                    <li>Apply By <br>00/00/0000</li>
+                                </ul>
+                            </div>
+                            <br>
+                            <p>Google offering you internships to the eligible candidates to enhance their skills.This intership is stippend and completing
+                                this intership candidate will given with the experience certificate. Grap your opportunity stand out in the crowd.All the best.
+                            </p>
+                            <a href="/form/<%=data.id%>"><button class="applyButton">APPLY</button></a>
+                        </div>
+                        </div>
+        
+                        <div class="fp">
+                            <div class="project">
+                                <h3 style="color: black;">Project Name</h3>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg>Belthangady</p><br>
+                                <div class="minInfo">
+                                    <ul>
+                                        <li>Start Date <br>00/00/0000</li>
+                                        <li>Duration <br>2 Months</li>
+                                        <li>Stipend <br>00000/Month</li>
+                                        <li>Apply By <br>00/00/0000</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <p>Google offering you internships to the eligible candidates to enhance their skills.This intership is stippend and completing
+                                    this intership candidate will given with the experience certificate. Grap your opportunity stand out in the crowd.All the best.
+                                </p>
+                                <a href="/form/<%=data.id%>"><button class="applyButton">APPLY</button></a>
+                            </div>
+                            </div>
+                    
+
+       
+            </div>
+
+
+            <div id="projectList">
+             <!-- electronics div -->
+                <div id="electronics">    
+                    <div class="fp">
+            <div class="project">
+                <h3 style="color: black;">Project NameA</h3>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>Belthangady</p><br>
+                <div class="minInfo">
+                    <ul>
+                        <li>Start Date <br>00/00/0000</li>
+                        <li>Duration <br>2 Months</li>
+                        <li>Stipend <br>00000/Month</li>
+                        <li>Apply By <br>00/00/0000</li>
+                    </ul>
+                </div>
+                <br>
+                <p>Google offering you internships to the eligible candidates to enhance their skills.This intership is stippend and completing
+                    this intership candidate will given with the experience certificate. Grap your opportunity stand out in the crowd.All the best.
+                </p>
+                <a href="/form/<%=data.id%>"><button class="applyButton">APPLY</button></a>
+            </div>
+                     </div>
+                    <div class="fp">
+                <div class="project">
+                    <h3 style="color: black;">Project NameAA</h3>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg>Belthangady</p><br>
+                    <div class="minInfo">
+                        <ul>
+                            <li>Start Date <br>00/00/0000</li>
+                            <li>Duration <br>2 Months</li>
+                            <li>Stipend <br>00000/Month</li>
+                            <li>Apply By <br>00/00/0000</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <p>Google offering you internships to the eligible candidates to enhance their skills.This intership is stippend and completing
+                        this intership candidate will given with the experience certificate. Grap your opportunity stand out in the crowd.All the best.
+                    </p>
+                    <a href="/form/<%=data.id%>"><button class="applyButton">APPLY</button></a>
+                </div>
+                    </div>
+                    <div class="fp">
+                        <div class="project">
+                            <h3 style="color: black;">Project NameA</h3>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                            </svg>Belthangady</p><br>
+                            <div class="minInfo">
+                                <ul>
+                                    <li>Start Date <br>00/00/0000</li>
+                                    <li>Duration <br>2 Months</li>
+                                    <li>Stipend <br>00000/Month</li>
+                                    <li>Apply By <br>00/00/0000</li>
+                                </ul>
+                            </div>
+                            <br>
+                            <p>Google offering you internships to the eligible candidates to enhance their skills.This intership is stippend and completing
+                            this intership candidate will given with the experience certificate. Grap your opportunity stand out in the crowd.All the best.
+                            </p>
+                            <a href="/form/<%=data.id%>"><button class="applyButton">APPLY</button></a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ,,,,,,,,,, -->
+        </div>
+     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<%= data.id %><%}) }%> </body>
+</html>
